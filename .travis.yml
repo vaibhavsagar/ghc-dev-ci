@@ -8,5 +8,5 @@ before_install:
   - nix --version
   - nix-instantiate --eval -E 'with import <nixpkgs> {}; lib.version or lib.nixpkgsVersion'
 script:
-  - nix-env -i cabal-install
+  - nix-env -i cabal-install haskellPackages.ghcid
   - bash steps.sh
