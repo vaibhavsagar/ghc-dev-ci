@@ -4,7 +4,6 @@
 
 set -euxo pipefail
 
-git config --global http.sslVerify false
 git clone --recursive https://gitlab.haskell.org/ghc/ghc/
 cd ghc
 git clone https://github.com/alpmestan/ghc.nix

@@ -1,2 +1,3 @@
+dist: xenial
 language: nix
 script: bash steps.sh
