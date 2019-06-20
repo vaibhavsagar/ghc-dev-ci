@@ -7,4 +7,6 @@ before_install:
   - source ${TRAVIS_HOME}/.nix-profile/etc/profile.d/nix.sh
   - nix --version
   - nix-instantiate --eval -E 'with import <nixpkgs> {}; lib.version or lib.nixpkgsVersion'
-script: bash steps.sh
+script:
+  - nix-env -i cabal-install
+  - bash steps.sh
