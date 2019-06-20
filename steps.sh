@@ -1,6 +1,6 @@
 #!/usr/bin/env nix-shell
 #! nix-shell -i bash
-#! nix-shell -p cabal-install git haskellPackages.ghcid nix
+#! nix-shell -p cabal-install haskellPackages.ghcid nix
 
 set -euxo pipefail
 
