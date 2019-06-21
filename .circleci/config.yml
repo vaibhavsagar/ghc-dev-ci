@@ -7,8 +7,8 @@ jobs:
       - checkout
       - run:
           name: Install Nix
-          command: install-nix.sh
+          command: ./install-nix.sh
       - run:
           name: Set up GHC development environment
-          command: steps.sh
+          command: ./steps.sh
 
