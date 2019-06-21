@@ -3,11 +3,12 @@ jobs:
   build:
     machine:
       - image: ubuntu-1604:201903-01
-  steps:
-    - run:
-      name: Install Nix
-      command: install-nix.sh
-    - run:
-      name: Set up GHC development environment
-      command: steps.sh
+    steps:
+      - checkout
+      - run:
+        name: Install Nix
+        command: install-nix.sh
+      - run:
+        name: Set up GHC development environment
+        command: steps.sh
 
