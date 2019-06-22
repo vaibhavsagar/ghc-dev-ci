@@ -9,6 +9,9 @@ jobs:
           name: Install Nix
           command: ./install-nix.sh
       - run:
+          name: Put Nix on $PATH
+          command: source /home/circleci/.nix-profile/etc/profile.d/nix.sh
+      - run:
           name: Set up GHC development environment
           command: ./steps.sh
 
